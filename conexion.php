@@ -8,9 +8,9 @@ $dbhost="localhost";
 $db_user="ginigo_pescado";
 $db_pass="elBuenPescado";*/
 
-$db_nombre='elbuenpe_main';
-$db_user="elbuenpe_maite";
-$db_pass="3lbu3np3sc4d0";
+$db_nombre='elbuenpe_dev';
+$db_user="elbuenpe_devuser";
+$db_pass="D1g1t4l3g4$$";
 
 $link = mysqli_connect($dbhost, $db_user, $db_pass, $db_nombre);
 return $link;
