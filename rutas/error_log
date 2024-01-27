@@ -1,0 +1,5 @@
+[24-Oct-2022 14:21:50 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home2/elbuenpe/public_html/rutas/pdf_ruta_conglomerado.php on line 90
+[24-Oct-2022 14:21:50 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home2/elbuenpe/public_html/rutas/pdf_ruta_conglomerado.php on line 90
+[24-Oct-2022 14:24:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ')' in /home2/elbuenpe/public_html/rutas/pdf_ruta_conglomerado.php on line 99
+[13-Sep-2023 13:46:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elbuenpe/public_html/rutas/listado_rutas_orden.php on line 7
+[13-Sep-2023 13:46:04 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home2/elbuenpe/public_html/rutas/listado_rutas_orden.php on line 135

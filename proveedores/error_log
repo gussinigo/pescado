@@ -1,0 +1,5 @@
+[05-Oct-2022 15:07:39 America/Boise] PHP Warning:  Undefined array key "id" in /home1/igeekcan/public_html/igcun/elbuenpescado/proveedores/proveedores_detalle.php on line 13
+[05-Oct-2022 15:07:39 America/Boise] PHP Warning:  Undefined variable $row in /home1/igeekcan/public_html/igcun/elbuenpescado/proveedores/proveedores_detalle.php on line 176
+[05-Oct-2022 15:07:39 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/igeekcan/public_html/igcun/elbuenpescado/proveedores/proveedores_detalle.php on line 176
+[05-Oct-2022 15:07:39 America/Boise] PHP Warning:  Undefined variable $row in /home1/igeekcan/public_html/igcun/elbuenpescado/proveedores/proveedores_detalle.php on line 183
+[05-Oct-2022 15:07:39 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/igeekcan/public_html/igcun/elbuenpescado/proveedores/proveedores_detalle.php on line 183
