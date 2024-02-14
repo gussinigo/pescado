@@ -2,7 +2,7 @@
 
 function Conectarse()
 { 
-$dbhost="localhost";
+$dbhost="192.232.217.125";
 
 /*$db_nombre='ginigo_buenPescadoDev';
 $db_user="ginigo_pescado";

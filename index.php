@@ -1,249 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta charset="utf-8" />
-    <title>el buen pescado</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-    <link rel="apple-touch-icon" href="pages/ico/60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta content="Meet pages - The simplest and fastest way to build web UI for your dashboard or app." name="description" />
-    <meta content="Ace" name="author" />
-    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
-    <!-- Please remove the file below for production: Contains demo classes -->
-    <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript">
-    window.onload = function()
-    {
-      // fix for windows 8
-      if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
-        document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="pages/css/windows.chrome.fix.css" />'
-    }
-    </script>
-  </head>
-  <body class="fixed-header ">
-    <div class="login-wrapper ">
-      <!-- START Login Background Pic Wrapper-->
-      <div class="bg-pic">
-        <!-- START Background Caption-->
-        <div class="p-l-50 p-r-50 p-t-50 m-t-230 sm-p-l-15 sm-p-r-15 sm-p-t-402" style="margin-top: 150px;">
-	        <img src="assets/img/logo_nuevo.png" />
-        </div>
-        <!-- END Background Caption-->
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" type="image/png" href="img/logo.svg">
+      <title>El Buen Pescado Tienda</title>
+      <!-- Slick Slider -->
+      <link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css"/>
+      <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.min.css"/>
+      <!-- Icofont Icon-->
+      <link href="vendor/icons/icofont.min.css" rel="stylesheet" type="text/css">
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet">
+      <!-- Sidebar CSS -->
+      <link href="vendor/sidebar/demo.css" rel="stylesheet">
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   </head>
+   <body class="fixed-bottom-padding">
+      <div class="theme-switch-wrapper">
+         <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+            <i class="icofont-moon"></i>
+         </label>
+         <em>Enable Dark Mode!</em>
       </div>
-      <!-- END Login Background Pic Wrapper-->
-      <!-- START Login Right Container-->
-      <div class="login-container bg-white">
-        <div class="p-l-50 p-r-50 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
-          <img src="assets/img/logo-48x48_c.png" alt="logo" data-src="assets/img/logo-48x48_c.png" data-src-retina="assets/img/logo-48x48_c@2x.png" width="48" height="48">
-          <h2 class="p-t-25">Empieza con <br/> tu sistema</h2>
-          <p class="mw-80 m-t-5">Inicia Sesión</p>
-          <!-- START Login Form -->
-          <form id="form-login" class="p-t-15" role="form" action="validaLogin.php">
-            <!-- START Form Control-->
-            <div class="form-group form-group-default">
-              <label>Login</label>
-              <div class="controls">
-                <input type="text" name="log" id="log" placeholder="Usario" class="form-control" required>
-              </div>
+      <!-- home page -->
+      <div class="osahan-home-page">
+         <div class="shadow-sm p-3 fondo">
+            <div class="title d-flex align-items-center">
+               <a href="index.html" class="text-decoration-none text-dark d-flex align-items-center">
+                  <img class="osahan-logo me-2" src="img/logo_white_2x.png">
+                  
+               </a>
+               <!--
+               <p class="ms-auto m-0">
+                  <a href="notification.html" class="text-decoration-none bg-white p-1 rounded shadow-sm d-flex align-items-center">
+                  <i class="text-dark bi bi-bell-fill"></i>
+                  <span class="badge badge-danger p-1 ms-1 small">2</span>
+                  </a>
+               </p> 
+               <a class="toggle ms-3 text-white" href="#"><i class="bi bi-list "></i></a> -->
             </div>
-            <!-- END Form Control-->
-            <!-- START Form Control-->
-            <div class="form-group form-group-default">
-              <label>Password</label>
-              <div class="controls">
-                <input type="password" class="form-control" name="pass" id="pass" placeholder="Credentials" required>
-              </div>
-            </div>
-            <!-- START Form Control-->
-            <div class="row">
-              <div class="col-md-6 no-padding sm-p-l-10">
+            <form id="form1" action="listing.php" method="post">
+               <div class="input-group mt-3 rounded shadow-sm overflow-hidden bg-white py-1">
+                  <div class="input-group-prepend">
+                     <button class="border-0 btn btn-outline-secondary text-success bg-white"><i class="icofont-search"></i></button>
+                  </div>
+                  <input type="text" class="shadow-none border-0 form-control ps-0" placeholder="Buscar productos.." aria-label="" aria-describedby="basic-addon1" name="buscar">
+               </div>
+            </form>
+         </div>
+         <!-- body -->
+         <div class="osahan-body">
+            <!-- categories -->
+            <div class="p-3 osahan-categories">
+               <h6 class="mb-2">¿Que necesitas? Elije tu categoria</h6>
+               <div class="row m-0">
+                  <div class="col ps-0 pe-1 py-1">
+                     <div class="bg-white shadow-sm rounded text-center  px-2 py-3 c-it">
+                        <a href="listing.php?cat=lacteos">
+                           <img src="img/categorie/5.svg" class="img-fluid px-2">
+                           <p class="m-0 pt-2 text-muted text-center">Lacteos</p>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col p-1">
+                     <div class="bg-white shadow-sm rounded text-center  px-2 py-3 c-it">
+                        <a href="listing.php?cat=mariscos">
+                           <img src="img/categorie/4.svg" class="img-fluid px-2">
+                           <p class="m-0 pt-2 text-muted text-center">Mariscos</p>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col p-1">
+                     <div class="bg-white shadow-sm rounded text-center  px-2 py-3 c-it">
+                        <a href="listing.php?cat=carnes">
+                           <img src="img/categorie/3.svg" class="img-fluid px-2">
+                           <p class="m-0 pt-2 text-muted text-center">Carnes</p>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col ps-0 pe-1 py-1">
+                     <div class="bg-white shadow-sm rounded text-center  px-2 py-3 c-it">
+                        <a href="listing.php?cat=abarrotes">
+                           <img src="img/categorie/7.svg" class="img-fluid px-2">
+                           <p class="m-0 pt-2 text-muted text-center">Abarrotes</p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
                
-              </div>
-              <div class="col-md-6 d-flex align-items-center justify-content-end">
-                <button aria-label="" class="btn btn-complete btn-lg m-t-10" type="submit">Sign in</button>
-              </div>
             </div>
             
-            <!-- END Form Control-->
-          </form>
-          <!--END Login Form-->
-          <div class="pull-bottom sm-pull-bottom">
-            <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
-              <div class="col-sm-9 no-padding m-t-10">
-                
-              </div>
+            <!-- Promos 
+            <div class="py-3 bg-white osahan-promos shadow-sm">
+               <div class="d-flex align-items-center px-3 mb-2">
+                  <h6 class="m-0">Promos for you</h6>
+                  <a href="promos.html" class="ms-auto text-success">See more</a>
+               </div>
+               <div class="promo-slider">
+                  <div class="osahan-slider-item m-2">
+                     <a href="promo_details.html"><img src="img/promo1.jpg" class="img-fluid mx-auto rounded" alt="Responsive image"></a>
+                  </div>
+                  <div class="osahan-slider-item m-2">
+                     <a href="promo_details.html"><img src="img/promo2.jpg" class="img-fluid mx-auto rounded" alt="Responsive image"></a>
+                  </div>
+                  <div class="osahan-slider-item m-2">
+                     <a href="promo_details.html"><img src="img/promo3.jpg" class="img-fluid mx-auto rounded" alt="Responsive image"></a>
+                  </div>
+               </div>
+            </div> -->
+            <!-- Pick's Today -->
+            <div class="title d-flex align-items-center mb-3 mt-3 px-3">
+               <h6 class="m-0">Productos del Dia</h6>
+               
             </div>
-          </div>
-        </div>
+            <!-- pick today -->
+            <div class="pick_today px-3">
+               <div class="row">
+                  <div class="col-6 pe-2  pt-3">
+                     <div class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
+                        <div class="list-card-image">
+                           <a href="product_details.html" class="text-dark">
+                              <!-- <div class="member-plan position-absolute"><span class="badge m-3 badge-danger">10%</span></div> -->
+                              <div class="p-3">
+                                 <img src="img/listing/v1.jpg" class="img-fluid item-img w-100 mb-3">
+                                 <h6>Queso Oaxaca</h6>
+                                 <div class="d-flex align-items-center">
+                                    <h6 class="price m-0 text-success">$30.00 kg</h6>
+                           <a href="cart.html" class="btn btn-success btn-sm ms-auto">+</a>
+                           </div>
+                           </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 pe-2  pt-3">
+                     <div class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
+                        <div class="list-card-image">
+                           <a href="product_details.html" class="text-dark">
+                              
+                              <div class="p-3">
+                                 <img src="img/listing/v2.jpg" class="img-fluid item-img w-100 mb-3">
+                                 <h6>Mojarra</h6>
+                                 <div class="d-flex align-items-center">
+                                    <h6 class="price m-0 text-success">$100.00 kg</h6>
+                           <a href="cart.html" class="btn btn-success btn-sm ms-auto">+</a>
+                           </div>
+                           </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 pe-2  pt-3">
+                     <div class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
+                        <div class="list-card-image">
+                           <a href="product_details.html" class="text-dark">
+                              
+                              <div class="p-3">
+                                 <img src="img/listing/v3.jpg" class="img-fluid item-img w-100 mb-3">
+                                 <h6>Camaron pelado 25</h6>
+                                 <div class="d-flex align-items-center">
+                                    <h6 class="price m-0 text-success">$130.00 kg</h6>
+                           <a href="cart.html" class="btn btn-success btn-sm ms-auto">+</a>
+                           </div>
+                           </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 pe-2  pt-3">
+                     <div class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
+                        <div class="list-card-image">
+                           <a href="product_details.html" class="text-dark">
+                              
+                              <div class="p-3">
+                                 <img src="img/listing/v4.jpg" class="img-fluid item-img w-100 mb-3">
+                                 <h6>Arrachera</h6>
+                                 <div class="d-flex align-items-center">
+                                    <h6 class="price m-0 text-success">$190.00 kg</h6>
+                           <a href="cart.html" class="btn btn-success btn-sm ms-auto">+</a>
+                           </div>
+                           </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+            <!-- Most sales -->
+            <div class="title d-flex align-items-center p-3">
+               <h6 class="m-0">Recomendaciones</h6>
+               <a class="ms-auto text-success" href="recommend.html">26 more</a>
+            </div>
+            <!-- osahan recommend -->
+            <div class="osahan-recommend px-3">
+               <div class="row">
+                  <div class="col-12 mb-3">
+                     <a href="product_details.html" class="text-dark text-decoration-none">
+                        <div class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
+                           <div class="recommend-slider rounded pt-2">
+                              <div class="osahan-slider-item m-2 rounded">
+                                 <img src="img/recommend/r1.jpg" class="img-fluid mx-auto rounded shadow-sm" alt="Responsive image">
+                              </div>
+                             
+                           </div>
+                           <div class="p-3 position-relative">
+                              <h6 class="mb-1 font-weight-bold text-success">Fresh Orange
+                              </h6>
+                              <p class="text-muted">Orange Great Quality item from Jamaica.</p>
+                              <div class="d-flex align-items-center">
+                                 <h6 class="m-0">$8.8/kg</h6>
+                     <a class="ms-auto" href="cart.html">
+                     <div class="input-group input-spinner ms-auto cart-items-number">
+                     <div class="input-group-prepend">
+                     <button class="btn btn-success btn-sm" type="button" id="button-plus"> + </button>
+                     </div>
+                     <input type="text" class="form-control" value="1">
+                     <div class="input-group-append">
+                     <button class="btn btn-success btn-sm" type="button" id="button-minus"> − </button>
+                     </div>
+                     </div>
+                     </a>
+                     </div>
+                     </div>
+                     </div>
+                     </a>
+                  </div>
+                  <div class="col-12 mb-3">
+                     <a href="product_details.html" class="text-dark text-decoration-none">
+                        <div class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
+                           <div class="recommend-slider rounded pt-2">
+                              <div class="osahan-slider-item m-2">
+                                 <img src="img/recommend/r2.jpg" class="img-fluid mx-auto rounded shadow-sm" alt="Responsive image">
+                              </div>
+                              <
+                           </div>
+                           <div class="p-3 position-relative">
+                              <h6 class="mb-1 font-weight-bold text-success">Green Apple</h6>
+                              <p class="text-muted">Green Apple Premium item from Vietnam.</p>
+                              <div class="d-flex align-items-center">
+                                 <h6 class="m-0">$10.8/kg</h6>
+                     <a class="ms-auto" href="cart.html">
+                     <div class="input-group input-spinner ms-auto cart-items-number">
+                     <div class="input-group-prepend">
+                     <button class="btn btn-success btn-sm" type="button" id="button-plus"> + </button>
+                     </div>
+                     <input type="text" class="form-control" value="1">
+                     <div class="input-group-append">
+                     <button class="btn btn-success btn-sm" type="button" id="button-minus"> − </button>
+                     </div>
+                     </div>
+                     </a>
+                     </div>
+                     </div>
+                     </div>
+                     </a>
+                  </div>
+                  <div class="col-12 mb-3">
+                     <a href="product_details.html" class="text-dark text-decoration-none">
+                        <div class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
+                           <div class="recommend-slider rounded pt-2">
+                              <div class="osahan-slider-item m-2">
+                                 <img src="img/recommend/r3.jpg" class="img-fluid mx-auto rounded shadow-sm" alt="Responsive image">
+                              </div>
+                              
+                           </div>
+                           <div class="p-3 position-relative">
+                              <h6 class="mb-1 font-weight-bold text-success">Fresh Apple
+                              </h6>
+                              <p class="text-muted">Fresh Apple Premium item from Thailand.</p>
+                              <div class="d-flex align-items-center">
+                                 <h6 class="m-0">$12.8/kg</h6>
+                     <a class="ms-auto" href="cart.html">
+                     <div class="input-group input-spinner ms-auto cart-items-number">
+                     <div class="input-group-prepend">
+                     <button class="btn btn-success btn-sm" type="button" id="button-plus"> + </button>
+                     </div>
+                     <input type="text" class="form-control" value="1">
+                     <div class="input-group-append">
+                     <button class="btn btn-success btn-sm" type="button" id="button-minus"> − </button>
+                     </div>
+                     </div>
+                     </a>
+                     </div>
+                     </div>
+                     </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <!-- END Login Right Container-->
-    </div>
-    <!-- START OVERLAY -->
-    <div class="overlay hide" data-pages="search">
-      <!-- BEGIN Overlay Content !-->
-      <div class="overlay-content has-results m-t-20">
-        <!-- BEGIN Overlay Header !-->
-        <div class="container-fluid">
-          <!-- BEGIN Overlay Logo !-->
-          <img class="overlay-brand" src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
-          <!-- END Overlay Logo !-->
-          <!-- BEGIN Overlay Close !-->
-          <a href="#" class="close-icon-light btn-link btn-rounded  overlay-close text-black">
-            <i class="pg-icon">close</i>
-          </a>
-          <!-- END Overlay Close !-->
-        </div>
-        <!-- END Overlay Header !-->
-        <div class="container-fluid">
-          <!-- BEGIN Overlay Controls !-->
-          <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
-          <br>
-          <div class="d-flex align-items-center">
-            <div class="form-check right m-b-0">
-              <input id="checkboxn" type="checkbox" value="1">
-              <label for="checkboxn">Search within page</label>
-            </div>
-            <p class="fs-13 hint-text m-l-10 m-b-0">Press enter to search</p>
-          </div>
-          <!-- END Overlay Controls !-->
-        </div>
-        <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-        <div class="container-fluid p-t-20">
-          <span class="hint-text">
-                suggestions :
-            </span>
-          <span class="overlay-suggestions"></span>
-          <br>
-          <div class="search-results m-t-30">
-            <p class="bold">Pages Search Results: <span class="overlay-suggestions"></span></p>
-            <div class="row">
-              <div class="col-md-6">
-                <!-- BEGIN Search Result Item !-->
-                <div class="d-flex m-t-15">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
-                    <img width="36" height="36" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10">
-                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> on pages</h5>
-                    <p class="small-text hint-text">via john smith</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="d-flex m-t-15">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
-                    <div>T</div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10">
-                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> related topics</h5>
-                    <p class="small-text hint-text">via pages</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="d-flex m-t-15">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
-                    <div>M
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10">
-                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> music</h5>
-                    <p class="small-text hint-text">via pagesmix</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-              </div>
-              <div class="col-md-6">
-                <!-- BEGIN Search Result Item !-->
-                <div class="d-flex m-t-15">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-info text-white d-flex align-items-center">
-                    <i class="pg-icon">facebook</i>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10">
-                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> on facebook</h5>
-                    <p class="small-text hint-text">via facebook</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="d-flex m-t-15">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-complete text-white d-flex align-items-center">
-                    <i class="pg-icon">twitter</i>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10">
-                    <h5 class="no-margin ">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="small-text hint-text">via twitter</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="d-flex m-t-15">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular text-white bg-danger d-flex align-items-center">
-                    <i class="pg-icon">google_plus</i>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10">
-                    <h5 class="no-margin ">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="small-text hint-text">via google plus</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END Overlay Search Results !-->
-      </div>
-      <!-- END Overlay Content !-->
-    </div>
-    <!-- END OVERLAY -->
-    <!-- BEGIN VENDOR JS -->
-    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
-    <!--  A polyfill for browsers that don't support ligatures: remove liga.js if not needed-->
-    <script src="assets/plugins/liga.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/popper/umd/popper.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
-    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
-    <script src="assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-    <!-- END VENDOR JS -->
-    <script src="pages/js/pages.min.js"></script>
-    <script>
-    $(function()
-    {
-      $('#form-login').validate()
-    })
-    </script>
-  </body>
+      <!-- Footer -->
+      <?php
+         include('includes/footer.php');
+      ?>
+      
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- slick Slider JS-->
+      <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+      <!-- Sidebar JS-->
+      <script type="text/javascript" src="vendor/sidebar/hc-offcanvas-nav.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="js/osahan.js"></script>
+   </body>
 </html>
